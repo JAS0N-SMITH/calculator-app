@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+/* src/styles.scss */
+nav {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a.active {
+  font-weight: bold;
+  color: #0056b3;
+}
