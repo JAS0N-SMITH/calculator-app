@@ -1,10 +1,14 @@
+<!-- calculator-basic.component.html -->
 <div class="calculator">
-  <input [(ngModel)]="input" placeholder="Enter equation" />
-  <div class="buttons">
+  <h1>Calculator</h1>
+  <div class="calculator-display">
+    <input [(ngModel)]="input" type="text" readonly />
+  </div>
+  <div class="calculator-buttons">
     <button *ngFor="let button of buttons" (click)="append(button)">
       {{ button }}
     </button>
-    <button (click)="clear()">C</button>
-    <button (click)="calculate()">=</button>
+    <button class="clear" (click)="clear()">C</button>
+    <button class="equals" (click)="calculate()">=</button>
   </div>
 </div>
